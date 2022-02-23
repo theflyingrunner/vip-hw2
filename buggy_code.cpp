@@ -37,7 +37,7 @@ double MyClass::timesTwo() {
 MyClass * makeMyClassInstance(double value) {
 	// should dynamically allocate a MyClass instance using the new command with passed value
 	// from this function
-	MyClass * a = new MyClass(value);
+	MyClass * a = nullptr;
 	return a;
 }
 
