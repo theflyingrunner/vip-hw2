@@ -8,7 +8,7 @@
 double arrayMax(double * data, int len) {
 	double maxVal = data[0];
 	for (int i=0; i<len; i++) {
-		if (data[i] < maxVal) {
+		if (data[i] > maxVal) {
 			maxVal = data[i];
 		}
 	}
@@ -37,10 +37,7 @@ double MyClass::timesTwo() {
 MyClass * makeMyClassInstance(double value) {
 	// should dynamically allocate a MyClass instance using the new command with passed value
 	// from this function
-	MyClass * a = nullptr;
+	MyClass * a = new MyClass(value);
 	return a;
 }
 
-int main() {
-return 0;
-}
